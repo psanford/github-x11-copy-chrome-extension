@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Github X11 copy fixer",
+  "description": "Fix X11 copy in the git url text field",
+  "version": "1.0",
+
+  "permissions": [
+    "https://github.com/*"
+  ],
+  "content_scripts": [{
+    "matches": ["https://github.com/*"],
+    "js": ["fixcopy.js"]
+  }]
+}
